@@ -1,0 +1,7 @@
+# Ignore ALL node_modules folders at any level
+**/node_modules/
+
+# Root .gitignore
+node_modules/  # root level
+server/node_modules/
+client/node_modules/
