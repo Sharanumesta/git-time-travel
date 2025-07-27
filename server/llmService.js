@@ -1,7 +1,7 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // Ideally move API key to a .env file — this is just for demo
-const genAI = new GoogleGenerativeAI("AIzaSyA1D9sEBamdZi_NTXypVJsv-2oKLfEvCEM");
+const genAI = new GoogleGenerativeAI(`${process.env.API_KEY}`);
 
 // 🔧 Define the model once globally
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
